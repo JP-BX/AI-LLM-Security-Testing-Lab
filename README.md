@@ -1,5 +1,3 @@
-# AI & LLM Security Testing Lab
-
 ## Project Overview
 
 This project demonstrates how prompt-injection attacks can affect AI applications and how basic security controls can detect and block suspicious requests.
