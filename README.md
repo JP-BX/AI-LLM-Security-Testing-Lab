@@ -31,12 +31,14 @@ I first created a simulated vulnerable chatbot called SecureBot. When I entered 
 
 This demonstrated the intended vulnerability in the initial test application and provided a baseline for developing defensive controls.
 
+<img width="1607" height="988" alt="image" src="https://github.com/user-attachments/assets/8cf19940-339c-40fb-9855-a932dd676a16" />
+
+
 ## Security Testing Results
 
 I developed 11 automated test cases covering benign prompts, suspicious requests, false positives, and an attempted detection bypass.
 
 All 11 tests passed after refining the detection logic. This result applies to the defined test cases and does not guarantee protection against all prompt-injection techniques.
-<img width="1607" height="988" alt="image" src="https://github.com/user-attachments/assets/77c43739-e2cb-4d3d-945c-69dffff1d048" />
 
 
 
@@ -57,6 +59,8 @@ The system uses:
 - Automated regression testing
 
 When a prompt is flagged, the application blocks the request and records the event in `security.log`.
+<img width="1616" height="848" alt="image" src="https://github.com/user-attachments/assets/ade30c27-f44f-4b35-a350-9e503118c6f3" />
+
 
 ## Testing Methodology
 
@@ -83,6 +87,9 @@ I replaced the broad exception with an exact-match check and retested the combin
 - Combined benign-and-malicious prompt: Blocked during live testing
 
 These results demonstrate successful regression testing against the selected prompts, not comprehensive protection against prompt injection.
+<img width="575" height="133" alt="image" src="https://github.com/user-attachments/assets/d6cc353d-9810-43f6-bf12-3f08213848e4" />
+
+
 
 ## Key Takeaways
 
